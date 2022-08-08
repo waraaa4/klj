@@ -1,0 +1,839 @@
+@font-face {
+    font-family: 'NanumBarunGothic';
+    font-style: normal;
+    font-weight: 400;
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot');
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'NanumBarunGothic';
+    font-style: normal;
+    font-weight: 700;
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot');
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.ttf') format('truetype')
+}
+
+@font-face {
+    font-family: 'NanumBarunGothic';
+    font-style: normal;
+    font-weight: 300;
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot');
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.ttf') format('truetype');
+}
+
+@import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'NanumBarunGothic', sans-serif;
+    position: relative;
+}
+
+li,
+ul,
+ol {
+    list-style: none;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+}
+
+::selection {
+    background-color: black;
+    color: white;
+}
+
+::placeholder {
+    color: white;
+}
+
+.clear {
+    clear: both;
+}
+
+.wrap {
+    width: 100%;
+}
+
+
+
+/* 섹션1 메인 이미지 */
+.section1 {
+    width: 100%;
+    margin-top: 60px;
+    background-color: #00a0de;
+}
+
+.section1_img_bg {
+    width: 100%;
+    height: 560px;
+}
+
+.section1_img_bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* 섹션2 가입상담 전번 */
+.section2 {
+    width: 100%;
+    
+}
+
+.section2_img {
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 0px;
+}
+
+.section2_img a {
+    max-width: 940px;
+    width: 100%;
+    display: block;
+    padding: 0px 15px;
+}
+
+.section2_img a img {
+    width: 100%;
+}
+
+
+/* 섹션3 유튜브 */
+.section3 {
+    width: 100%;
+    background-color: #0078a7;
+    padding: 40px 0px;
+}
+
+.section3_you {
+    max-width: 1140px;
+    width: 100%;
+    height: 641px;
+    margin: 0 auto;
+}
+
+.section3_you iframe {
+    width: 100%;
+    height: 100%;
+}
+
+/* 섹션4 가입상담신청 버튼 */
+.section4 {
+    width: 100%;
+}
+
+.section4_img a {
+    display: block;
+}
+
+.section4_img {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 70px 0px;
+}
+
+.section4_img img {
+    width: 100%;
+}
+
+
+/* 섹션6 대한민국 상조업계 1위 타이틀 */
+.section6 {
+    width: 100%;
+    background-color: #f2f2f2;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+
+.section6_title {
+    max-width: 1170px;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.section6_title h3 {
+    font-size: 46px;
+    font-weight: bold;
+    line-height: 1.6;
+    color: #2b2b2b;
+}
+
+.section6_title h1 {
+    font-size: 86px;
+    font-weight: bold;
+    line-height: 1.6;
+    color: rgb(40, 162, 225);
+}
+
+.section6_box {
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.section6_item {
+    width: 33.3333%;
+}
+
+.section6_item_img {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section6_item_img img {
+    width: 300px;
+    height: 300px;
+}
+
+.section6_item_text {
+    width: 100%;
+    text-align: center;
+    line-height: 1.5;
+    margin-top: 30px;
+}
+
+.section6_item_text_box {
+    margin-top: 20px;
+}
+
+.section6_item_text_box h1 {
+    font-size: 20px;
+    color: rgb(16, 113, 207);
+}
+
+.section6_item_text_box p {
+    font-size: 16px;
+    color: #2b2b2b;
+}
+
+
+/* 섹션7 늘 당신의 삷과 함께 이미지, 멤버십 서비스, 가입하신 고객  */
+.section7 {
+    width: 100%;
+}
+
+.section7_img {
+    max-width: 1750px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.section7_img img {
+    width: 100%;
+}
+
+
+/* 섹션8 국가장 */
+.section8 {
+    width: 100%;
+    height: 300px;
+    border: 1px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* 섹션9 서비스와 가전의 만남 한번에 다 준비하세요 이미지 */
+.section9 {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 섹션10 늘기쁨 구좌 설명 */
+.section10 {
+    width: 100%;
+}
+
+.section10_wrap {
+    max-width: 1250px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0px 15px;
+    box-sizing: border-box;
+}
+
+.section10_title {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.section10_title_text1 {
+    width: 25%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.section10_title_text1 img {
+    width: 100%;
+}
+
+.section10_title_text2 {
+    width: 75%;
+    text-align: center;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.section10_title_text2 h2 {
+    font-size: 30px;
+    color: #4f4f4f;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.section10_title_text2 h2 strong {
+    font-size: 48px;
+    color: rgb(3, 110, 184);
+    font-weight: bold;
+}
+
+.section10_title_text2 h2 span:not(.section10_title_text2 h2 span:nth-child(2)) {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.section10_title_text2 h2 span:nth-child(2) {
+    color: rgb(3, 110, 184);
+}
+
+.section10_cont {
+    width: 100%;
+}
+
+.section10_cont img {
+    width: 100%;
+}
+
+.section10_cont td {
+    width: 25%;
+    padding: 8px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.section10_cont .sec10_tr_bg {
+    background-color: #f3f3f3;
+}
+
+.sec10_td_bold {
+    font-weight: bold;
+}
+
+.section10_bottom {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #4f4f4f;
+}
+
+.section10_bottom p {
+    padding: 5px;
+}
+
+.section10_cont tr:nth-child(2) {
+    display: none;
+}
+
+.section10_br {
+    display: none;
+}
+
+
+/* 섹션11 늘기쁨 문구 이미지 */
+.section11 {
+    width: 100%;
+    height: 300px;
+    border: 1px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* 섹션12 가구 이미지 멤버쉽 */
+.section12 {
+    width: 100%;
+    height: 300px;
+    border: 1px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* 바텀 고정 포지션 */
+.bottom {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #0078a7;
+    z-index: 99;
+}
+
+.bottom_wrpa {
+    max-width: 1250px;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0px 5px;
+    box-sizing: border-box;
+}
+
+.bottom_title {
+    width: 100%;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.bottom_title p {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+
+.bottom_title strong {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.bottom_box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.bottom_item {
+    margin: 5px 5px;
+    border-radius: 7px;
+}
+
+.bottom_item:nth-child(1) {
+    background-color: #25bcaf;
+}
+
+.bottom_item:nth-child(2) {
+    background-color: #ef5f7a;
+}
+
+.bottom_item a {
+    display: flex;
+    align-items: center;
+    padding: 5px 20px;
+    line-height: 1.5;
+}
+
+.bottom_item a i {
+    color: #fff;
+    margin-right: 7px;
+}
+
+.bottom_item a p {
+    color: #fff;
+}
+
+.bottom_btn {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    z-index: 999;
+}
+
+.bottom_btn > div {
+    background-color: #fff;
+    padding: 5px;
+    z-index: 999;
+}
+
+.bottom_btn > div:nth-child(1) {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.bottom_btn > div:nth-child(2) {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.bottom_btn i {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+
+/* 1200px */
+@media (max-width: 1300px) {
+    .section1_img_bg img {
+        object-fit: cover;
+    }
+}
+
+
+/* 1200px */
+@media (max-width: 1200px) {
+    .section3_you {
+        max-width: 970px;
+        height: 546px;
+    }
+
+    .section6_box {
+        max-width: 970px;
+    }
+
+    .section6_title {
+        max-width: 970px;
+    }
+
+    .section6_title h3 {
+        font-size: 46px;
+    }
+
+    .section6_title h1 {
+        font-size: 62px;
+    }
+
+    .section6_item_text_box h1 {
+        font-size: 18px;
+    }
+    
+    .section6_item_text_box p {
+        font-size: 15px;
+    }
+
+    .section10_title_text2 h2 {
+        font-size: 25px;
+    }
+
+    .section10_title_text2 h2 strong {
+        font-size: 40px;
+    }
+
+    .section10_title_text2 h2 span:not(.section10_title_text2 h2 span:nth-child(2)) {
+        font-size: 40px;
+    }
+    
+
+}
+
+/* 1000px */
+@media (max-width: 1000px) {
+    .section2_img {
+        max-width: 710px;
+    }
+
+    .section3_you {
+        max-width: 740px;
+        height: 416px;
+    }
+
+    .section6_box {
+        max-width: 740px;
+        justify-content: center;
+    }
+
+    .section6_item_img img {
+        width: 223px;
+        height: 223px;
+    }
+
+    .section6_title {
+        max-width: 740px;
+    }
+
+    .section6_title h3 {
+        font-size: 31px;
+    }
+
+    .section6_title h1 {
+        font-size: 52px;
+    }
+
+    .section6_item_text_box h1 {
+        font-size: 18px;
+    }
+    
+    .section6_item_text_box p {
+        font-size: 15px;
+    }
+
+    .section10_title_text2 h2 {
+        font-size: 25px;
+    }
+
+    .section10_title_text2 h2 strong {
+        font-size: 30px;
+    }
+
+    .section10_title_text2 h2 span:not(.section10_title_text2 h2 span:nth-child(2)) {
+        font-size: 30px;
+    }
+    
+}
+
+/* 모바일 */
+/* 768px */
+@media (max-width: 768px) {
+    .section1_img_bg {
+        height: 400px;
+    }
+
+    .section2_img {
+        padding: 48px 0px;
+    }
+
+    .section3_you {
+        position: relative;
+        padding-bottom: 56.25%;
+        height: 0;
+    }
+    
+    .section3_you iframe {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        right: 0;
+    }
+
+    .section4_img {
+        padding: 56px 15px;
+        box-sizing: border-box;
+    }
+
+    .section6_box {
+        max-width: 740px;
+        flex-wrap: wrap;
+    }
+
+    .section6_item {
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    .section6_item:nth-child(1) {
+        margin-top: 20px;
+    }
+
+    .section6_item_img img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .section6_title {
+        max-width: 740px;
+    }
+
+    .section6_title h3 {
+        font-size: 24px;
+    }
+
+    .section6_title h1 {
+        font-size: 45px;
+    }
+
+    .section6_item_text_box h1 {
+        font-size: 15px;
+    }
+    
+    .section6_item_text_box p {
+        font-size: 14px;
+    }
+
+    .section10_title_text1 {
+        width: 35%;
+    }
+
+    .section10_title_text2 {
+        width: 65%;
+    }
+
+    .section10_title_text2 h2 {
+        font-size: 16px;
+    }
+
+    .section10_title_text2 h2 strong {
+        font-size: 22px;
+    }
+
+    .section10_title_text2 h2 span:not(.section10_title_text2 h2 span:nth-child(2)) {
+        font-size: 22px;
+    }
+
+    .section10_cont tr:nth-child(1) {
+        display: none;
+    }
+
+    .section10_cont tr:nth-child(2) {
+        display: table-row;
+    }
+    
+}
+
+
+/* 600px */
+@media (max-width: 600px) {
+    .section1_img_bg {
+        height: 300px;
+    }
+
+    .section10_title_text1 {
+        width: 35%;
+    }
+
+    .section10_title_text2 {
+        width: 65%;
+    }
+
+    .section10_title_text2 h2 {
+        font-size: 13px;
+    }
+
+    .section10_title_text2 h2 strong {
+        font-size: 15px;
+    }
+
+    .section10_title_text2 h2 span:not(.section10_title_text2 h2 span:nth-child(2)) {
+        font-size: 15px;
+    }
+
+    .section10_cont td {
+        font-size: 14px;
+    }
+
+    .section10_br {
+        display: block;
+    }
+
+    .section10_bottom p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+}
+
+
+/* 480px */
+@media (max-width: 480px) {
+    .section1_img_bg {
+        height: 250px;
+    }
+
+    .section2_img {
+        padding: 30px 0px;
+    }
+
+    .section4_img {
+        padding: 35px 15px;
+    }
+
+    .section7_text1 h1 {
+        font-size: 20px;
+    }
+    
+    .section7_text1 h3 {
+        font-size: 16px;
+    }
+
+    .section7_text2 p {
+        font-size: 14px;
+    }
+    
+    .section7_text2 strong {
+        font-size: 15px;
+    }
+
+    .section10_title_text1 {
+        width: 35%;
+    }
+
+    .section10_title_text2 {
+        width: 65%;
+    }
+
+    .section10_title_text2 h2 {
+        line-height: 1.5;
+        font-size: 12px;
+    }
+
+    .section10_title_text2 h2 strong {
+        font-size: 14px;
+    }
+
+    .section10_title_text2 h2 span:not(.section10_title_text2 h2 span:nth-child(2)) {
+        font-size: 14px;
+    }
+
+    .section10_cont td {
+        font-size: 14px;
+    }
+
+    .bottom_btn {
+        display: none;
+    }
+    
+}
+
+
+/* 330 */
+@media (max-width: 360px) {
+    .bottom_title p {
+        font-size: 14px;
+    }
+    
+    .bottom_title strong {
+        font-size: 18px;
+    }
+
+    .bottom_item p {
+        font-size: 13px;
+    }
+}
+
+
+/* 330 */
+@media (max-width: 330px) {
+    .section6_item_img img {
+        width: 220px;
+        height: 220px;
+    }
+}

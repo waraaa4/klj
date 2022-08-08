@@ -1,0 +1,475 @@
+@font-face {
+    font-family: 'NanumBarunGothic';
+    font-style: normal;
+    font-weight: 400;
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot');
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'NanumBarunGothic';
+    font-style: normal;
+    font-weight: 700;
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot');
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.ttf') format('truetype')
+}
+
+@font-face {
+    font-family: 'NanumBarunGothic';
+    font-style: normal;
+    font-weight: 300;
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot');
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.ttf') format('truetype');
+}
+
+@import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'NanumBarunGothic', sans-serif;
+    position: relative;
+}
+
+li,
+ul,
+ol {
+    list-style: none;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    overflow-x:hidden;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+}
+
+::selection {
+    background-color: black;
+    color: white;
+}
+
+::placeholder {
+    color: white;
+}
+
+.clear {
+    clear: both;
+}
+
+.wrap {
+    width: 100%;
+}
+
+
+/* 폰트 공통 */
+* {
+    line-height: 1.5;
+}
+
+/* 섹션 공통 */
+.section {
+    width: 100%;
+}
+
+
+/* 섹션1 */
+.section1 {
+    margin-top: 60px;
+}
+
+.section1_wrap {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    color: #2b2b2b;
+    padding: 80px 15px 30px 15px;
+    box-sizing: border-box;
+    
+}
+
+.section1_wrap h1 {
+    font-size: 62px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+.section1_wrap h3 {
+    font-size: 28px;
+    font-weight: normal;
+}
+
+.section1_wrap strong {
+    font-weight: bold;
+    color: rgb(17, 148, 220);
+}
+
+.section1_img {
+    width: 100%;
+}
+
+.section1_img img {
+    width: 100%;
+}
+
+
+/* 섹션2 늘행복 상조+가전 */
+.section2_wrap {
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 60px 15px 10px 15px;
+    color: #2b2b2b;
+    box-sizing: border-box;
+}
+
+.section2_text1 span {
+    width: 100px;
+    height: 3px;
+    background-color: #03d663;
+    display: inline-block;
+}
+
+.section2_text1 h3 {
+    font-size: 30px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.section2_text2 h4 {
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.section2_text2 strong {
+    font-size: 22px;
+    color: rgb(184, 49, 47);
+}
+
+.section2_box {
+    width: 100%;
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section2_box_img {
+    width: 33.3333%;
+    cursor: pointer;
+}
+
+.section2_box_img img {
+    width: 100%;
+}
+
+/* 섹션3 늘행복 가격 이미지 */
+.section3_wrap {
+    max-width: 1077px;
+    width: 100%;
+    padding: 10px 15px 10px 15px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.section3_img {
+    width: 100%;
+}
+
+.section3_img img {
+    width: 100%;
+}
+
+.section3_box {
+    width: 100%;
+}
+
+.section3_box_img {
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+.section3_box_text {
+    text-align: center;
+    color: rgb(92, 92, 92);
+    padding: 20px 0px;
+}
+
+.section3_box_text span {
+    width: 35px;
+    height: 1px;
+    background-color: #d6d7d8;
+    display: inline-block;
+}
+
+.section3_box_text h2 {
+    font-size: 24px;
+}
+
+.section3_box_text p {
+    font-size: 17px;
+}
+
+
+/* 섹션4 프리드라이프 멤버십 혜택 */
+.section4_wrap {
+    max-width: 1145px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.section4_img {
+    width: 100%;
+}
+
+.section4_img img {
+    width: 100%;
+}
+
+
+/* 섹션5 안내사항 */
+.section5_wrap {
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px 15px 20px 15px;
+    box-sizing: border-box;
+}
+
+.section5_text {
+    width: 100%;
+    color: #2b2b2b;
+}
+
+.section5_text h4 {
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.section5_text p {
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+
+
+/* 1200px */
+@media (max-width: 1200px) {
+    .section1_wrap {
+        max-width: 940px;
+    }
+
+    .section1_wrap h1 {
+        font-size: 46px;
+    }
+    
+    .section1_wrap h3 {
+        font-size: 28px;
+    }
+
+    .section2_wrap {
+        max-width: 940px;
+    }
+
+    .section5_wrap {
+        max-width: 970px;
+    }
+}   
+
+
+/* 1000px */
+@media (max-width: 1000px) {
+    .section1_wrap {
+        max-width: 740px;
+        padding: 80px 15px 30px 15px;
+    }
+
+    .section1_wrap h1 {
+        font-size: 40px;
+        margin-bottom: 15px;
+    }
+    
+    .section1_wrap h3 {
+        font-size: 22px;
+    }
+
+    .section2_wrap {
+        max-width: 740px;
+    }
+
+    .section2_text1 h3 {
+        font-size: 23px;
+    }
+    
+    .section2_text2 h4 {
+        font-size: 18px;
+    }
+    
+    .section2_text2 strong {
+        font-size: 19px;
+    }
+
+    .section3_box_text h2 {
+        font-size: 20px;
+    }
+    
+    .section3_box_text p {
+        font-size: 16px;
+    }
+
+    .section5_wrap {
+        max-width: 740px;
+    }
+    
+    .section5_text h4 {
+        font-size: 18px;
+    }
+    
+    .section5_text p {
+        font-size: 14px;
+    }
+}
+
+
+/* 768px */
+@media (max-width: 768px) {
+    .section1_wrap {
+        max-width: 940px;
+        padding: 64px 15px 24px 15px;
+    }
+
+    .section1_wrap h1 {
+        font-size: 33px;
+        margin-bottom: 10px;
+    }
+    
+    .section1_wrap h3 {
+        font-size: 18px;
+    }
+
+    .section2_wrap {
+        padding: 48px 15px 8px 15px;
+    }
+
+    .section2_text1 h3 {
+        font-size: 18px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    
+    .section2_text2 h4 {
+        font-size: 15px;
+    }
+    
+    .section2_text2 strong {
+        font-size: 16px;
+    }
+
+    .section2_box_img {
+        width: 100%;
+    }
+
+    .section3_box_img {
+        padding-top: 32px;
+    }
+
+    .section3_box_text {
+        padding: 16px 0px;
+    }
+
+    .section3_box_text h2 {
+        font-size: 16px;
+    }
+    
+    .section3_box_text p {
+        font-size: 14px;
+    }
+
+    .section5_wrap {
+        padding: 32px 15px 16px 15px;
+    }
+    
+    .section5_text h4 {
+        font-size: 15px;
+    }
+    
+    .section5_text p {
+        font-size: 13px;
+    }
+}
+
+
+/* 480px */
+@media (max-width: 480px) {
+    .section1_wrap h1 {
+        font-size: 31px;
+        margin-bottom: 10px;
+    }
+    
+    .section1_wrap h3 {
+        font-size: 16px;
+    }
+
+    .section2_wrap {
+        padding: 30px 15px 5px 15px;
+    }
+
+    .section2_text1 h3 {
+        font-size: 16px;
+    }
+    
+    .section2_text2 h4 {
+        font-size: 14px;
+    }
+    
+    .section2_text2 strong {
+        font-size: 14px;
+    }
+
+    .section3_box_img {
+        width: 100%;
+        padding-top: 20px;
+    }
+
+    .section3_box_img img {
+        width: 100%;
+    }
+
+    .section3_box_text {
+        padding: 10px 0px;
+    }
+
+    .section3_box_text h2 {
+        font-size: 15px;
+    }
+    
+    .section3_box_text p {
+        font-size: 13px;
+    }
+
+    .section5_wrap {
+        padding: 20px 15px 10px 15px;
+    }
+    
+    .section5_text h4 {
+        font-size: 14px;
+    }
+    
+    .section5_text p {
+        font-size: 12px;
+    }
+}

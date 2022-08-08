@@ -1,0 +1,260 @@
+@font-face {
+    font-family: 'NanumBarunGothic';
+    font-style: normal;
+    font-weight: 400;
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot');
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'NanumBarunGothic';
+    font-style: normal;
+    font-weight: 700;
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot');
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.ttf') format('truetype')
+}
+
+@font-face {
+    font-family: 'NanumBarunGothic';
+    font-style: normal;
+    font-weight: 300;
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot');
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.ttf') format('truetype');
+}
+
+@import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'NanumBarunGothic', sans-serif;
+    position: relative;
+}
+
+li,
+ul,
+ol {
+    list-style: none;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+}
+
+::selection {
+    background-color: black;
+    color: white;
+}
+
+::placeholder {
+    color: white;
+}
+
+.clear {
+    clear: both;
+}
+
+.wrap {
+    width: 100%;
+}
+
+
+/* 헤더 */
+header {
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background-color: #fff;
+}
+
+.header_wrap {
+    max-width: 1170px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.header_logo {
+    width: 160px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 15px;
+}
+
+.header_logo img {
+    width: 100%;
+}
+
+.header_nav {
+    width: auto;
+}
+
+.header_nav ul {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.header_nav ul li {
+    padding: 0px 15px;
+}
+
+.header_nav ul li a {
+    color: #4d4d4d;
+    font-size: 17px;
+    letter-spacing: 0.2em;
+    transition: 0.3s;
+}
+
+.header_nav ul li a:hover {
+    color: #b9b9b9;
+}
+
+.header_ham {
+    display: none;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 30px;
+    font-size: 24px;
+}
+
+
+/* 푸터 */
+footer {
+    width: 100%;
+    font-family: 'Nanum Gothic', sans-serif;
+    padding-bottom: 100px;
+}
+
+.footer_wrap {
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 0px 15px;
+}
+
+.footer_img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 70px 0px;
+}
+
+.footer_box {
+    width: 100%;
+    text-align: center;
+}
+
+.footer_box_text {
+    width: 100%;
+}
+
+.footer_box_text p {
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 1.6;
+    letter-spacing: 0.05em;
+    color: #828282;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.footer_box_text1 a {
+    font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: 0.05em;
+    color: #828282;
+}
+
+.footer_box_text1 a strong {
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.footer_box_text1 span {
+    font-weight: bold;
+    color: #828282;
+}
+
+.footer_box_text2 a {
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 1.6;
+    letter-spacing: 0.05em;
+    color: #828282;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.footer_box_text3 {
+    margin: 70px 0px;
+}
+
+
+
+
+/* 1200px */
+@media (max-width: 1200px) {
+    .header_wrap {
+        max-width: 940px;
+    }
+
+    .footer_wrap {
+        max-width: 710px;
+    }
+}
+
+/* 모바일 */
+/* 768px */
+@media (max-width: 768px) {
+    .header_wrap {
+        width: 100%;
+    }
+
+    .header_nav {
+        display: none;
+    }
+
+    .header_ham {
+        display: flex;
+    }
+
+    .footer_box_text1 a {
+        font-size: 14px;
+    }
+    
+    .footer_box_text p {
+        font-size: 13px;
+    }
+
+    .footer_box_text3 p {
+        font-size: 12px;
+    }
+}

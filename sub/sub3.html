@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>전환서비스</title>
+    <!-- 파비콘  -->
+    <link rel="shortcut icon" href="/images/favicon.ico">
+    <!-- css -->
+    <link rel="stylesheet" href="/css/sub3.css">
+    <link rel="stylesheet" href="/css/commom.css">
+    <!-- js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="/js/sub.js"></script>
+    <!-- 폰트어썸 -->
+    <script src="https://kit.fontawesome.com/8ca221a456.js" crossorigin="anonymous"></script>
+    <!-- 구글폰트 -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrap">
+        <!-- 헤더 -->
+        <header>
+            <div class="header_wrap">
+                <div class="header_logo">
+                    <a href="/index.html">
+                        <img src="/images/logo.png" alt="">
+                    </a>
+                </div>
+                <div class="header_nav">
+                    <ul>
+                        <li><a href="sub1.html">늘기쁨</a></li>
+                        <li><a href="sub2.html">전환서비스</a></li>
+                        <li><a href="sub3.html">간편상담신청</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="header_ham">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+
+        <!-- 섹션1 간편 상담 신청 -->
+        <section class="section section1">
+            <div class="section1_wrap"> 
+                <div class="section1_form">
+                    <div class="section1_title">
+                        <span></span>
+                        <h1><strong>늘기쁨</strong> 가전결합</h1>
+                        <h2>간편 상담 신청</h2>
+                    </div>
+                    <form action="/send.php" method="post" onsubmit="return Submit();">
+                        <ul class="section1_box">
+                            <li><input type="hidden" name="contact_number"></li>
+                            <li><label for="name">이름 <span>*</span></label></li>
+                            <li><input type="text" name="name"></li>
+                            <li><label for="telephone">휴대폰번호 <span>*</span></label></li>
+                            <li><input type="number" name="telephone"></li>
+                            <li><label for="comments">통화가능시간 / 궁금한 사항</label></li>
+                            <li><input type="text" name="comments"></li>
+                            <li><input type="hidden" name="email"></li>
+                            <li>
+                                <p>개인정보 수집 및 이용 동의 <span>*</span></p>
+                                <textarea rows="5">
+■ 개인정보 수집목적 및 이용목적
+프리드라이프 가입상담 및 상품판매
+
+■ 수집하는 개인정보 항목
+성명, 휴대폰번호
+
+■ 개인정보의 보유기간 및 이용기간
+관계 법령의 규정에 따라 귀하의 개인정보를 보존할 의무가 있는 경우가 아닌 한, 수집/이용일로부터 90일 또는 수집/이용 목적 달성 시 파기합니다. 
+
+* 귀하는 위와 같은 일반 개인정보의 수집 및 이용을 거부할 수 있습니다. 다만, 일반 개인정보의 필수적 수집 및 이용에 동의하지 않을 경우 상담신청은 불가능합니다.
+                                </textarea>
+                            </li>
+                            <li>
+                                <input id="agreement" name="agreement" type="checkbox" value="true" class="section1_ck">
+                                <label for="agreement" class="section1_ck_label">개인정보 수집 및 이용에 동의합니다.</label>
+                            </li>
+                            <li class="submit_btn_li">
+                                <input type="submit" value="가입문의하기" class="submit_btn">
+                            </li>
+                        </ul>
+                    </form>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 푸터 -->
+        <footer>
+            <div class="footer_wrap">
+                <div class="footer_img">
+                    <img src="/images/footer.png" alt="">
+                </div>
+                <div class="footer_box">
+                    <div class="footer_box_text footer_box_text1">
+                        <a href="terms1.html"><strong>개인정보처리방침</strong></a>
+                        <span>&nbsp;|&nbsp;</span>
+                        <a href="terms2.html"><strong>중요정보고시사항</strong></a>
+                        <br>
+                        <p>&nbsp;</p>
+                    </div>
+                    <div class="footer_box_text footer_box_text2">
+                        <p>케이엘제이컴퍼니 | 사업자등록번호 : 285-86-01453 | 대표자 : 김지애 <br>
+                            경기도 부천시 송내대로30번길 13 송내테크노밸리 7층 702호,704호</p>
+                        <a href="tel:1833-6478">가입전화 : 1833-6478</a>
+                    </div>
+                    <div class="footer_box_text footer_box_text3">
+                        <p>Copyrights © 2022 by 케이엘제이컴퍼니. All Rights Reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+<script>
+    var Submit = function () {
+        var agree = document
+            .getElementById('agreement')
+            .checked;
+        if (agree === true || agree == 'checked') {
+            return true;
+        } else {
+            alert('개인정보취급방침에 동의해주세요');
+            return false;
+        };
+    };
+</script>
+</html>
